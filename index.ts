@@ -52,5 +52,5 @@ class SubUser extends Userr{
 }
 
 const namitt = new Userr("namit77@gmail.com", "Namit", 1)
-namitt.deleteToken() // Error: Property 'deleteToken' is private and only accessible within class 'Userr'.
+// namitt.deleteToken() // Error: Property 'deleteToken' is private and only accessible within class 'Userr'.
 
