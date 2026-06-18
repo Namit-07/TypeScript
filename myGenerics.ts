@@ -39,3 +39,37 @@ const getMoreSearchProducts = <T>(products: T[]): T => { // generic arrow functi
     const myIndex = 4 
     return products[4]
 } 
+
+interface Database {
+    connection: string,
+    username: string,
+    password: string
+}
+
+function anotherFunction<T, U>(valOne: T, valTwo: U): object {
+    return{
+        valOne,
+        valTwo
+    }
+}
+
+// anotherFunction(3, {name: 'Vishal'}) // returns object with valOne and valTwo
+
+interface Quiz {
+    name: string,
+    type: number
+}
+
+interface Course {
+    name: string,
+    author: string,
+    subject: string
+}
+
+class Sellable<T> {
+    public cart: T[] = []
+
+    addToCart(product: T) {
+        this.cart.push(product)
+    }
+}
